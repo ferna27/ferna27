@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>practica</title>
+</head>
+<body>
+	
+		
+		<nav>
+
+			<input type="checkbox" class="myCheckBox" id="myCheck">
+			<label for="myCheck" class="checkButton">
+				<i class="fas fa bars">/</i>
+			</label>
+
+			<label class="logo">Rick y Morty</label>
+			<ul>
+				<li class="activo">caracter</li>
+				<li>locacion</li>
+				<li>spisodio</li>
+			</ul>
+		</nav>
+
+		<div class="buscar">
+			<input type="text" placeholder="Buscar"  class="carr" id="input">
+			<button class="boton">Sench</button>
+		</div>
+
+		<select name="status" id="status">
+			<optgroup label="Status">
+				<option value="alive">alive</option>
+				<option value="dead">dead</option>
+				<option value="unknown">unknown</option>
+			</optgroup>
+		
+		</select>
+
+		<select name="species" id="species">
+			<optgroup label="species">
+				<option value="Human">Human</option>
+				<option value="Alien">Alien</option>
+				<option value="Humanoid">Humanoid</option>
+				<option value="poopybutthole">poopybutthole</option>
+				<option value="Mythological">Mythological</option>
+				<option value="Unknown">Unknown</option>
+				<option value="Disease">Disease</option>
+				<option value="Animal">Animal</option>
+				<option value="Robot">Robot</option>
+			</optgroup>
+		</select>
+
+	
+	<div class="contenedor" id="contenedor"></div>
+
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</div>
+
+	<script src="../public/js/main.js"></script>
+</body>
+</html>

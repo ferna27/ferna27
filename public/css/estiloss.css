@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #787474;
+	color: white;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula:hover{
+	z-index: 1;
+	transform: scale(1.10);
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 5);
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+	
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	scroll-margin-top: 100px;
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+	
+}
+
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #0fbb9e;
+}
+
+
+nav{
+	background-color: #0fbbaf;
+	bottom: 0;
+	width: 100%;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul{
+	float: right;
+	margin: right 55px; ;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: cursive;
+	padding: 7px 13px;
+}
+
+label.logo{
+	font-size: 25px;
+	line-height: 70px;
+	padding: 0 80px;
+	font-weight: bold;
+	font-family: cursive;
+	color: #141313;
+}
+
+.checkButton{
+	font-size:  30px;
+	color: white;
+	float: right;
+	line-height: 50px;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+.myCheckBox{
+	display: none;
+}
+
+/*a:hover a.active{
+	color: #f7c324;
+}*/
+
+
+.buscar{
+	text-align: right;
+	padding: 5px;
+	margin: 10px;
+
+}
+.buscar button{
+	width: 75px;
+	height: 35px;
+	border-radius: 30px;
+	border: 1px solid silver;
+	background-color: #0fbba4;
+}
+
+.buscar input{
+	width: 300px;
+	height: 40px;
+	padding: 0 20px;
+	font-size: 18px;
+	color: #0e0e0e;
+	border: 1px solid silver;
+	border-radius: 30px;
+	
+	
+}
+
+@media screen and (max-width:952px) {
+	label .logo{
+		font-size: 30px;
+		padding: 50px;
+	}
+	nav ul li{
+		font-size: 16px;
+	}
+	
+}
+@media screen and (max-width:858px){
+	.checkButton{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 9%;
+		height: 25vh;
+		background-color: #12bb0f;
+		top: 100px;
+		left: -100%;
+		text-align: left;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 40px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+		color: black;
+	}
+	.myCheckBox:checked ~ ul{
+		left: 0;
+	}
+
+}
+
+
+

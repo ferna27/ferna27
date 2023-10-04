@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/stay.css" />
+  </head>
+  <body>
+    <h1>Calendario</h1>
+    <br/><br/>
+    <div id="calendario">
+      <div id="fifa">
+        <div id="posterior" class="calendar__icono">click</div>
+        <h2 id="titulos"></h2>
+        <h2 id="year"></h2>
+        <div id="anterior" class="calendar__icono">click</div>
+      </div>
+
+      <div class="calendar__one">
+        <div class="calendar__day calendar__item">Domingo</div>
+        <div class="calendar__day calendar__item">Lunes</div>
+        <div class="calendar__day calendar__item">Marte</div>
+        <div class="calendar__day calendar__item">Miercoles</div>
+        <div class="calendar__day calendar__item">Juesves</div>
+        <div class="calendar__day calendar__item">vierne</div>
+        <div class="calendar__day calendar__item">Sabado</div>
+      </div>
+
+      <div id="fila0" class="datos"></div>
+      <div id="fechaactual"></div>
+      <div id="buscafecha">
+        <form action="#" name="buscar" class="sele">
+          <p>
+            Buscar ... MES
+            <select name="buscames">
+              <option value="0">Enero</option>
+              <option value="1">Febrero</option>
+              <option value="2">Marzo</option>
+              <option value="3">Abril</option>
+              <option value="4">Mayo</option>
+              <option value="5">Junio</option>
+              <option value="6">Julio</option>
+              <option value="7">Agosto</option>
+              <option value="8">Septiembre</option>
+              <option value="9">Octubre</option>
+              <option value="10">Noviembre</option>
+              <option value="11">Diciembre</option>
+            </select>
+            ... AÑO ...
+            <input type="text" name="buscaanno" maxlength="4" size="4" class="input-busca">
+            ...
+            <input type="button" value="BUSCAR" class="boton__busca">
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="../public/js/ap.js"></script>
+</body>
+</html>

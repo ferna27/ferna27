@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "express": "^4.18.2",
+    "path": "^0.12.7",
     "typed.js": "^2.0.16"
   }
 }
